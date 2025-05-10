@@ -1,0 +1,47 @@
+programa: instrucciones;
+instrucciones: 
+  instruccion 
+  | instrucciones instruccion
+  ;
+instruccion: bucle;
+bucle:
+  "do""("sentencia")"
+  "while""("condicion")"";"
+  ;
+sentecia:
+  salida 
+  | salida sentencia 
+  | terminar
+  ;
+salida: 
+  "puts""("cadena")"";"
+  ;
+terminar:
+  "breack"";"
+  ;
+condicion:
+  "0"
+  |"1"
+  ;}
+cadena: 
+  "\""caracteres"\""
+  ;
+caracteres:
+  caracter
+  |caracteres caracter
+  ;
+caracter:
+  letra
+  |digito
+  |simbolo
+  ;
+letra:
+  "a"..."Z"
+  |"A"..."Z"
+  ;
+simbolo:
+  "."|","|"!"|"?"|":"|";"|"'"
+  ;
+
+
+
