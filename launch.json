@@ -1,14 +1,14 @@
 {
-    "version": "2.0.0",
-    "configurations": [
+  "version": "0.2.0",
+  "configurations": [
     {
-    "name": "Debug ANTLR4 grammar",
-    "type": "antlr-debug",
-    "request": "launch",
-    "input": "input.txt",
-    "grammar": "Calculator.g4",
-    "printParseTree": true,
-    "visualParseTree": true
+      "type": "node",
+      "request": "launch",
+      "name": "Ejecutar SubCLite",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/index.js",
+      "outFiles": []
     }
-    ]
+  ]
 }
+
