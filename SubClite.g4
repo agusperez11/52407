@@ -1,4 +1,4 @@
-grammar Programa;
+grammar SubCLite;
 
 programa: instrucciones EOF;
 
@@ -60,3 +60,4 @@ simbolo:
 ;
 
 WS: [\t\n\r ]+ -> skip;
+
