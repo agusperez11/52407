@@ -1,63 +1,48 @@
 grammar SubCLite;
-
-programa: instrucciones EOF;
-
+programa: instrucciones EOF
+ ;
 instrucciones:
     instruccion
     | instrucciones instruccion
-;
-
-instruccion: bucle;
-
+ ;
+instruccion: bucle
+ ;
 bucle:
     'do' '(' sentencia ')' 'while' '(' condicion ')' ';'
-;
-
+ ;
 sentencia:
     salida
     | salida sentencia
     | terminar
-;
-
+ ;
 salida:
     'puts' '(' cadena ')' ';'
-;
-
+ ;
 terminar:
     'break' ';'
-;
-
+ ;
 condicion:
-    '0'
+    |'0'
     | '1'
-;
-
+ ;
 cadena:
     '"' caracteres '"'
-;
-
+ ;
 caracteres:
     caracter
     | caracteres caracter
-;
-
+ ;
 caracter:
     letra
     | digito
     | simbolo
-;
-
-letra:
-    [a-zA-Z]
-;
-
-digito:
-    [0-9]
-;
-
+ ;
+letra: [a-zA-Z]
+ ;
+digito:[0-9]
+ ;
 simbolo:
     '.' | ',' | '!' | '?' | ':' | ';' | '\''
-;
-
-WS: [\t\n\r ]+ -> skip;
+ ;
+WS: [\t\n\r ]+ -> ski
 
