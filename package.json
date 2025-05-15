@@ -1,6 +1,6 @@
 {
   "name": "subclite-analyzer",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Analizador léxico y sintáctico para SubCLite con ANTLR y JavaScript",
   "main": "index.js",
   "scripts": {
@@ -9,5 +9,6 @@
   },
   "dependencies": {
     "antlr4": "^4.13.1"
-  }}
+  }
+}
 
