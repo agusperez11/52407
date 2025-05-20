@@ -1,5 +1,14 @@
-do ( puts ("Hola"); ) while(1); 
-break; 
+do ( puts ("Gracias"); 
+ break; 
+) while(1); 
+do ( puts ("Totales"); 
+ break; 
+) while(1); 
+
+
+
+
+
 
 
 
