@@ -1,3 +1,0 @@
-do { puts("Hola");
-}
-while(1);
